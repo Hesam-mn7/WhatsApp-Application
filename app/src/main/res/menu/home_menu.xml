@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/action_newgroup" android:title="New group" />
+    <item android:id="@+id/action_newbroadcast" android:title="New broadcast" />
+    <item android:id="@+id/action_web" android:title="WhatsApp Web" />
+    <item android:id="@+id/action_starmessagea" android:title="Starres messages" />
+    <item android:id="@+id/action_settings" android:title="Settings" />
+
+
+
+</menu>

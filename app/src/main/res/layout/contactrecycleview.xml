@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/linearContact"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:foreground="?attr/selectableItemBackground"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgProfileContact"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:src="@drawable/eren"
+        android:layout_marginLeft="16dp"
+        android:foreground="?attr/selectableItemBackground"
+        />
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvnameContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hesam"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/imgProfileContact"
+        android:layout_marginLeft="16sp"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:textColor="@color/black"/>
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvBio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/imgProfileContact"
+        android:text="Hey there! I am using WhatsApp."
+        android:layout_marginLeft="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        android:textSize="16sp"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

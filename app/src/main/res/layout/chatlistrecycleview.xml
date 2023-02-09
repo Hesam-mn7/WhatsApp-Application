@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearText"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:foreground="?attr/selectableItemBackground"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:src="@drawable/eren"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:foreground="?attr/selectableItemBackground"
+/>
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hesam"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/imgProfile"
+            android:layout_marginLeft="16sp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textColor="@color/black"/>
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@id/imgProfile"
+            android:text="hiiiiii"
+            android:layout_marginLeft="17dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="10dp"
+            android:textSize="16sp"
+            />
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="14dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="11:32"
+            android:textSize="12sp"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        style="@style/view"
+        app:layout_constraintBottom_toBottomOf="@id/linearText"
+        android:layout_marginLeft="92dp"
+        android:layout_marginRight="16dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
